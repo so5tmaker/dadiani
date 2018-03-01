@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -9,10 +9,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
-    <title>Дадиани, кафе грузинской кухни</title>
+    <link href="css/styles.css" rel="stylesheet">
+
+    <title>Дадиани, кафе грузинской кухни: О нас</title>
+
 </head>
 
 <body>
@@ -21,29 +23,30 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Кафе Дадиани</a>
+            <a class="navbar-brand" href="./index.html">Кафе Дадиани</a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
                             <span class="fa fa-home fa-lg"></span> Главная</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./aboutus.html">
-                            <span class="fa fa-info fa-lg"></span> О нас</a>
+                            <span class="fa fa-info fa-lg"> </span> О нас</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span class="fa fa-list fa-lg"></span> Меню</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactus.html">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
                             <span class="fa fa-address-card fa-lg"></span> Контакты</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <header class="jumbotron">
         <div class="container row-header">
             <div class="row">
@@ -59,44 +62,57 @@
     </header>
 
     <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
-                <h3>Наши кулинарные творения</h3>
-            </div>
-            <div class="col-sm col-md flex-first">
-                <h2>Чашушули</h2>
-                <p class="hidden-xs-down">Блюдо из мяса говядины (телятины), родом из Грузии. В переводе с грузинского обозначает "острый", поэтому
-                    это блюдо рекомендуется готовить с большим количеством острого перца, но конечно, можно степень остроты
-                    определить под себя. Это блюдо готовится в собственном соку, что обеспечивает ему неповторимый вкус,
-                    очень мягкий и острый одновременно. Готовить блюдо нужно в казане, что бы мясо не получилось сухим и
-                    жестким.
-                </p>
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="./index.html">Главная</a>
+                </li>
+                <li class="breadcrumb-item active">Контакты</li>
+            </ol>
+            <div class="col-12">
+                <h3>Контакты</h3>
+                <hr>
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
-                <h3>Акции в этом месяце</h3>
+        <div class="row row-content">
+            <div class="col-12">
+                <h3>Наше расположение</h3>
             </div>
-            <div class="col-sm col-md flex-first">
-                <h2>Специальное предложение</h2>
-                <p class="hidden-xs-down">Грузинское застолье, или как его называют грузины «Супра» (или «скатерть» по-грузински), является настоящим
-                    представлением. Cо своими правилами, ритуалами, традициями и особыми технологиями приготовления блюд,
-                    ему нет аналогов в мире.</p>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                <h5>Адрес</h5>
+                <address style="font-size: 100%">
+                    Кабанбай батыра, 37
+                    <br> Медеуский район
+                    <br> АЛМАТЫ
+                    <br>
+                    <i class="fa fa-phone"></i>: +7 (771) 487‒13‒13
+                    <br>
+                    <i class="fa fa-mobile"></i>: +7 (727) 291‒90‒24
+                    <br>
+                    <i class="fa fa-envelope"></i>:
+                    <a href="mailto:dadiani.almaty@gmail.com">dadiani.almaty@gmail.com</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <h5>Найдите на карте наше местоположение</h5>
+            </div>
+            <div class="col-12 col-sm-11 offset-sm-1">
+                
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-last">
-                <h3>Встречайте наших первоклассных поваров</h3>
+        <div class="row row-content">
+            <div class="col-12">
+                <h3>Оставьте свой комментарий</h3>
             </div>
-            <div class="col-sm col-md flex-first">
-                <h2>Ираклий Циклаури</h2>
-                <h4>Шеф Повар</h4>
-                <p class="hidden-xs-down">Награжденный тремя звездами шеф-повар Michelin с широким международным опытом, тесно сотрудничающий с кем-то
-                    в кулинарном мире, он специализируется на создании аппетитных грузинских блюд.</p>
+            <div class="col-12 col-md-9">
+                Form goes here
+            </div>
+            <div class="col-12 col-md">
             </div>
         </div>
+
     </div>
 
     <footer class="footer">
@@ -106,7 +122,7 @@
                     <h5>Ссылки</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">Главная</a>
+                            <a href="./index.html">Главная</a>
                         </li>
                         <li>
                             <a href="./aboutus.html">О нас</a>
@@ -115,7 +131,7 @@
                             <a href="#">Меню</a>
                         </li>
                         <li>
-                            <a href="./contactus.html">Контакты</a>
+                            <a href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -167,6 +183,7 @@
             </div>
         </div>
     </footer>
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
