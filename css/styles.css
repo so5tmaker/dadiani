@@ -50,7 +50,7 @@ body{
     background:#B0BEC5;
 }
 .carousel-item {
-  height: 300px;
+    min-height: 300px;
 }
 .carousel-item img {
     position: absolute;
@@ -58,9 +58,48 @@ body{
     left: 0;
     min-height: 300px;
 }
-
 #carousel-button {
     right:0px;
     position: absolute;
     bottom: 0px;
 }
+.menu {
+    min-height: 600px !important;
+}
+.menu img {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 360px) { 
+    .menu {
+        min-height: 300px !important;
+    }    
+}
+@media (min-width: 640px) { 
+    .menu {
+        min-height: 340px !important;
+    }    
+}
+@media (min-width: 768px) { 
+    .menu {
+        min-height: 460px !important;
+    }    
+}
+@media (min-width: 812px) { 
+    .menu {
+        min-height: 460px !important;
+    }    
+}
+@media (min-width: 1024px) { 
+    .menu {
+        min-height: 700px !important;
+    }    
+}
+@media (min-width: 1366px) { 
+    .menu {
+        min-height: 754px !important;
+    }    
+}
+

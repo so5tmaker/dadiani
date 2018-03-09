@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -9,12 +9,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
-    <link href="css/styles.css" rel="stylesheet">
-
-    <title>Дадиани, кафе грузинской кухни: Контакты</title>
-
+    <title>Дадиани, кафе грузинской кухни: Меню</title>
 </head>
 
 <body>
@@ -27,21 +25,21 @@
                 <img src="img/logo_face.png" height="35" width="35">
             </a>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">
                             <span class="fa fa-home fa-lg"></span> Главная</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./aboutus.html">
-                            <span class="fa fa-info fa-lg"> </span> О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./menu.html">
-                            <span class="fa fa-list fa-lg"></span> Меню</a>
+                            <span class="fa fa-info fa-lg"></span> О нас</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">
+                            <span class="fa fa-list fa-lg"></span> Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">
                             <span class="fa fa-address-card fa-lg"></span> Контакты</a>
                     </li>
                 </ul>
@@ -65,121 +63,81 @@
     </header>
 
     <div class="container">
-        <div class="row">
-            <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="./index.html">Главная</a>
-                </li>
-                <li class="breadcrumb-item active">Контакты</li>
-            </ol>
-            <div class="col-12">
-                <h3>Контакты</h3>
-                <hr>
-            </div>
-        </div>
-
         <div class="row row-content">
-            <div class="col-12">
-                <h3>Наше расположение</h3>
-            </div>
-            <div class="col-12 col-sm-4 offset-sm-1">
-                <h5>Адрес</h5>
-                <address style="font-size: 100%">
-                    Кабанбай батыра, 37
-                    <br> Медеуский район
-                    <br> АЛМАТЫ
-                    <br>
-                    <i class="fa fa-phone"></i>: +7 (771) 487‒13‒13
-                    <br>
-                    <i class="fa fa-mobile"></i>: +7 (727) 291‒90‒24
-                    <br>
-                    <i class="fa fa-envelope"></i>:
-                    <a href="mailto:dadiani.almaty@gmail.com">dadiani.almaty@gmail.com</a>
-                </address>
-            </div>
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <h5>Найдите наше местоположение на карте</h5>
-            </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary" href="tel:+7771487‒13‒13">
-                        <i class="fa fa-phone"></i> Call</a>
-                    <a role="button" class="btn btn-info">
-                        <i class="fa fa-skype"></i> Skype</a>
-                    <a role="button" class="btn btn-success" href="mailto:dadiani.almaty@gmail.com">
-                        <i class="fa fa-envelope-o"></i> Email</a>
+            <div class="col">
+                <div id="menucarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item menu active">
+                            <img class="d-block img-fluid" src="img/menu/menu_01.jpg" alt="Обложка">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_02.jpg" alt="Холодные закуски">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_03.jpg" alt="Салаты">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_04.jpg" alt="Горячие закуски и закуски к пиву">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_05.jpg" alt="Супы и рыбные блюда">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_06.jpg" alt="Горячие блюда">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_07.jpg" alt="Стейки и выпечка">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_08.jpg" alt="Гарниры и соусы">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_09.jpg" alt="Шашлыки">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_10.jpg" alt="Блюда на заказ и блюда на компанию">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_11.jpg" alt="Мороженое и десерты">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_12.jpg" alt="Винная карта">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_13.jpg" alt="Алкогольные напитки">
+                        </div>
+                        <div class="carousel-item menu">
+                            <img class="d-block img-fluid" src="img/menu/menu_14.jpg" alt="Напитки">
+                        </div>
+                    </div>  
+                    <ol class="carousel-indicators">
+                        <li data-target="#menucarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#menucarousel" data-slide-to="1"></li>
+                        <li data-target="#menucarousel" data-slide-to="2"></li>
+                        <li data-target="#menucarousel" data-slide-to="3"></li>
+                        <li data-target="#menucarousel" data-slide-to="4"></li>
+                        <li data-target="#menucarousel" data-slide-to="5"></li>
+                        <li data-target="#menucarousel" data-slide-to="6"></li>
+                        <li data-target="#menucarousel" data-slide-to="7"></li>
+                        <li data-target="#menucarousel" data-slide-to="8"></li>
+                        <li data-target="#menucarousel" data-slide-to="9"></li>
+                        <li data-target="#menucarousel" data-slide-to="10"></li>
+                        <li data-target="#menucarousel" data-slide-to="11"></li>
+                        <li data-target="#menucarousel" data-slide-to="12"></li>
+                        <li data-target="#menucarousel" data-slide-to="13"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#menucarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#menucarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <button class="btn btn-danger btn-sm" id="carousel-button">
+                        <span id="carousel-button-icon" class="fa fa-pause"></span>
+                    </button>
                 </div>
             </div>
         </div>
-
-        <div class="row row-content">
-            <div class="col-12">
-                <h3>Оставьте свой комментарий</h3>
-            </div>
-            <div class="col-12 col-md-9">
-                <form>
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">Имя</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Введите ваше имя">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Фамилия</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Введите вашу фамилию">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label">Телефон</label>
-                        <div class="col-5 col-sm-4 col-md-3">
-                            <div class="input-group">
-                                <div class="input-group-addon">(</div>
-                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Код города">
-                                <div class="input-group-addon">)</div>
-                            </div>
-                        </div>
-                        <div class="col-7 col-sm-6 col-md-7">
-                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Введите ваш телефон">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Введите ваш email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="form-check col-md-6 offset-md-2">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="approve" value="">
-                                <strong>Можно с вами связаться?</strong>
-                            </label>
-                        </div>
-                        <div class="col-md-3 offset-md-1">
-                            <select class="form-control">
-                                <option>Телефон</option>
-                                <option>Email</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">Ваш комментарий</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Отправить</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-12 col-md">
-            </div>
-        </div>
-
     </div>
 
     <footer class="footer">
@@ -195,10 +153,10 @@
                             <a href="./aboutus.html">О нас</a>
                         </li>
                         <li>
-                            <a href="./menu.html">Меню</a>
+                            <a href="#">Меню</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="./contactus.html">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -250,11 +208,24 @@
             </div>
         </div>
     </footer>
-
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $("#carousel-button").click(function () {
+            if ($("#carousel-button").children("span").hasClass('fa-pause')) {
+                $("#menucarousel").carousel('pause');
+                $("#carousel-button").children("span").removeClass('fa-pause');
+                $("#carousel-button").children("span").addClass('fa-play');
+            }
+            else if ($("#carousel-button").children("span").hasClass('fa-play')) {
+                $("#menucarousel").carousel('cycle');
+                $("#carousel-button").children("span").removeClass('fa-play');
+                $("#carousel-button").children("span").addClass('fa-pause');
+            }
+        });
+    </script>
 </body>
 
 </html>
