@@ -1,2 +1,2 @@
 # dadiani
-This web project was created for Cafe Dadiani using Bootstap 4.
+This web project was created for the Cafe Dadiani using Bootstap 4.
