@@ -4,9 +4,6 @@ module.exports = function (grunt) {
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
-    // Automatically load required Grunt tasks
-    require('jit-grunt')(grunt);
-
     require('jit-grunt')(grunt, {
         useminPrepare: 'grunt-usemin'
     });
@@ -76,18 +73,8 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,                  // Enable dynamic expansion
                     cwd: './',                   // Src matches are relative to this path
-                    src: ['img/*.{png,jpg,gif}'],   // Actual patterns to match
+                    src: ['img/**/*.{png,jpg,gif}'],   // Actual patterns to match
                     dest: 'dist/'                  // Destination path prefix
-                }]
-            }
-        },
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,                  // Enable dynamic expansion
-                    cwd: './',                   // Src matches are relative to this path
-                    src: ['img/menu/*.{png,jpg,gif}'],   // Actual patterns to match
-                    dest: 'dist/menu/'                  // Destination path prefix
                 }]
             }
         },
@@ -95,7 +82,7 @@ module.exports = function (grunt) {
         useminPrepare: {
             foo: {
                 dest: 'dist',
-                src: ['contactus.html', 'aboutus.html', 'index.html']
+                src: ['contactus.html', 'aboutus.html', 'index.html', 'menu.html']
             },
             options: {
                 flow: {
@@ -163,7 +150,7 @@ module.exports = function (grunt) {
         // options.assetDirs contains the directories for finding the assets
         // according to their relative paths
         usemin: {
-            html: ['dist/contactus.html', 'dist/aboutus.html', 'dist/index.html'],
+            html: ['dist/contactus.html', 'dist/aboutus.html', 'dist/index.html', 'dist/menu.html'],
             options: {
                 assetsDirs: ['dist', 'dist/css', 'dist/js']
             }
@@ -175,7 +162,6 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean',
         'copy',
-        'imagemin',
         'imagemin',
         'useminPrepare',
         'concat',
